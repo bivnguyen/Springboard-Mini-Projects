@@ -148,4 +148,5 @@ FROM (
 	ORDER BY cost DESC
     ) sub
 GROUP BY sub.facility_name
+HAVING total_revenue < 1000
 ORDER BY total_revenue DESC
